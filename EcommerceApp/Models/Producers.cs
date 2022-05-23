@@ -1,16 +1,15 @@
 ﻿using System;
 namespace EcommerceApp.Models
 {
-    public class Actors
+    public class Producers
     {
-        public Actors()
+        public Producers()
         {
         }
-
         public int Id { get; set; }
 
         public string FullName { get; set; }
 
-        public string Biograpy { get; set; }
+        public string Biography { get; set; }
     }
 }
