@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace EcommerceApp.Models
 {
     public class Actor
@@ -12,5 +14,9 @@ namespace EcommerceApp.Models
         public string FullName { get; set; }
 
         public string Biograpy { get; set; }
+
+        //Relationship
+        public List<Actor_Movie> Actors_Movies { get; set; }
+
     }
 }

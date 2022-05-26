@@ -26,7 +26,7 @@ namespace EcommerceApp.Models
         public MovieCategory MovieCategory { get; set; }
 
         //Relationship
-        public List<Actor_Movie> Actor_Movie { get; set; }
+        public List<Actor_Movie> Actors_Movies { get; set; }
 
         //Producer
         public int ProducerId { get; set; }
@@ -40,5 +40,6 @@ namespace EcommerceApp.Models
         [ForeignKey("CinemaId")]
 
         public Cinema Cinema { get; set; }
+        
     }
 }
