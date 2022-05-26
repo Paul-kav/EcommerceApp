@@ -1,9 +1,9 @@
 ﻿using System;
 namespace EcommerceApp.Models
 {
-    public class Actors
+    public class Actor
     {
-        public Actors()
+        public Actor()
         {
         }
 

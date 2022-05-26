@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace EcommerceApp.Models
 {
-    public class Producers
+    public class Producer
     {
-        public Producers()
+        public Producer()
         {
         }
         public int Id { get; set; }
@@ -11,5 +13,8 @@ namespace EcommerceApp.Models
         public string FullName { get; set; }
 
         public string Biography { get; set; }
+
+        //Relationship
+        public List<Movie> Movies { get; set; }
     }
 }
