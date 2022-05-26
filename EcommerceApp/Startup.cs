@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MySql.Data.MySqlClient;
 
 namespace EcommerceApp
 {
@@ -24,8 +25,9 @@ namespace EcommerceApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Db context configuration
-            services.AddDbContext<AppDbContext>();
+            //Db context configuration/translator
+            services.AddDbContext<AppDbContext>();//(options => options.UseMySqlServer(Configuration.GetConnectionString("WebApiDatabase")));
+
             services.AddControllersWithViews();
         }
 
