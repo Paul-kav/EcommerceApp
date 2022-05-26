@@ -1,4 +1,6 @@
 ﻿using System;
+using EcommerceApp.Data;
+
 namespace EcommerceApp.Models
 {
     public class Movies
@@ -19,6 +21,6 @@ namespace EcommerceApp.Models
 
         public int Price { get; set; }
 
-        
+        public MovieCategory MovieCategory { get; set; }
     }
 }
